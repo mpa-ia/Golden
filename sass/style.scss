@@ -1,0 +1,119 @@
+/* Variables */
+
+$font-text: 'Noto Sans', sans-serif;
+$font-header: 'Lora', serif;
+
+$color-text:#808e9b;
+$color-decorator: #ffd32a;
+$color-background: #fff;
+$color-black: #000;
+
+$transition: all 1s;
+
+/* Global */
+
+body {
+font-family: $font-text;
+color: $color-text;
+margin: 0;
+}
+
+/* Header */
+
+header {
+    background-image: url(https://images.pexels.com/photos/270695/pexels-photo-270695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    height: 80vh;
+    object-fit: cover;
+    background-size: cover;
+    color: $color-background;
+    position: relative;
+    z-index: -1;
+}
+
+header::before {
+    background: #1e272e;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    content: '';
+    z-index: 0;
+}
+
+nav {
+    z-index: 1;
+
+    h6 {
+        color: $color-decorator;
+        font-size: 20px;
+        font-family: $font-header;
+        margin-top: 20px;
+    }
+
+    ul {
+       list-style-type: none;
+       text-align: right;
+       margin-top: 20px;
+       
+        li {
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 3em;
+        }
+         a {
+            font-weight: 500;
+            color: $color-background;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+         }
+    }
+}
+.splash {
+    z-index: 1;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+        font-size: 75px;
+        text-transform: uppercase;
+        color: $color-background;
+        letter-spacing: 1.3;
+    }
+    
+    h2 {
+        font-family: $font-header;
+        color: $color-background;
+        font-size: 45px;
+        font-style: italic;
+    }
+
+    .btn {
+        height: 50px;
+        width: 160px;
+        text-decoration: none;
+        transition: $transition;
+        background: $color-decorator;
+        color: $color-background;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+        line-height: 2.4;
+        border-radius: 7px;
+        cursor: pointer;
+
+        &:hover {
+            background: $color-black;
+        }
+    }
+}
+
+/* Services */
+/* Portfolio*/
+/* Footer */
