@@ -207,3 +207,27 @@ footer .fab {
   line-height: 46px;
   cursor: pointer;
 }
+
+/* Media */
+@media (max-width: 767px) {
+  .splash {
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -10%);
+  }
+  .splash h1 {
+    font-size: 40px;
+  }
+  .splash h2 {
+    font-size: 30px;
+  }
+  nav h6 {
+    margin-top: 5px;
+  }
+  nav ul {
+    margin-top: 5px;
+  }
+  footer .fab {
+    margin-top: 10px;
+  }
+}

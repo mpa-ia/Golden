@@ -227,3 +227,38 @@ footer  {
     }
 }
 
+/* Media */
+
+@media (max-width: 767px) {
+
+    .splash {
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -10%);
+        h1 {
+            font-size: 40px;
+        }
+    
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    nav {
+    
+        h6 {
+            margin-top: 5px;
+        }
+    
+        ul {
+           margin-top: 5px;
+           
+        }
+    }
+
+    footer {
+        .fab {
+            margin-top: 10px;
+        }
+    }
+}
