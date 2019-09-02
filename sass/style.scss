@@ -201,3 +201,29 @@ nav {
 }
 
 /* Footer */
+
+footer  {
+    padding: 40px 0;
+
+    .copyright {
+        text-align: left;
+    }
+
+    span {
+        font-size: 11px;
+        font-weight: 800;
+    }
+
+    .fab {
+        font-size: 24px;
+        margin: 0 5px;
+        border-radius: 50%;
+        color: $color-background;
+        background: $color-black;
+        width: 46px;
+        height: 46px;
+        line-height: 46px;
+        cursor: pointer;
+    }
+}
+
